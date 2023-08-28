@@ -37,7 +37,7 @@ public class ArrayInsert {
 			names[i] = name;
 		}
 
-		//     System.out.println(Arrays.toString(names));
+		     System.out.println(Arrays.toString(names));
 
 		System.out.println("----------------------------------------");
 		System.out.println("입력받은 이름: ");
