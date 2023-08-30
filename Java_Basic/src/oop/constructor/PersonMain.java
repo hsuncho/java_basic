@@ -28,6 +28,8 @@ public class PersonMain {
 		Person a = new Person(name, age, height);
 		a.Info();
 		
+		Person b = new Person();
+		
 		sc.close();
 		
 	}
