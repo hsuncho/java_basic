@@ -50,9 +50,11 @@ public class MainClass {
 		kim.drive(p2);
 		
 		System.out.println("---------------------");
-		Car c = kim.buyCar("소나타");
-		c.run();
-		
+		Tesla myTesla = (Tesla) kim.buyCar("테슬라");
+//		c.run();
+//		Tesla myTesla = (Tesla)c;
+		myTesla.run();
+		myTesla.activeAutopilot();
 		
 	}
 

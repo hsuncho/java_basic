@@ -35,6 +35,10 @@ public class MainClass {
 		Player[] character = {w1,w2,m2,h1,h2};
 		m1.blizzard(character);
 		
+		System.out.println();
 		w1.attack(m1);
+		
+		System.out.println();
+		w2.rush(h2);
 	}
 }
