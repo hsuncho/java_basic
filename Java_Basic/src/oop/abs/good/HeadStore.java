@@ -33,5 +33,4 @@ public abstract class HeadStore {
 		System.out.println("수박주스의 가격은 4000원입니다.");
 	}
 	
-	
 }

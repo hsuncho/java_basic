@@ -25,12 +25,14 @@ public class ScoreMain {
 		Scanner sc = new Scanner(System.in);
 		Score[] scoreArr = new Score[100];
 		
-		boolean flag = false;
 		for (int i =0; i<scoreArr.length;i++) {
+			System.out.println("*** 학생 정보 ***");
+			System.out.println("'그만'을 입력하시면 종료됩니다.");
 			
 			System.out.print("이름: ");
 			String name = sc.next();
 			if(name.equals("그만")) {
+				System.out.println("입력을 종료합니다.");
 				break;
 			}
 			
@@ -42,14 +44,14 @@ public class ScoreMain {
 			int math = sc.nextInt();
 			
 			scoreArr[i] = new Score(name, kor, eng, math);
+			System.out.println("*** 입력 완료! ***\n");
 			
-		}
+		} //입력 반복문 끝
 		
-		System.out.println("--------------------------");
 		for(Score s:scoreArr) {
 			if(s==null) break;
-			
 			s.scoreInfo(); 
+			System.out.println("--------------------------");
 		}
 		sc.close();
 

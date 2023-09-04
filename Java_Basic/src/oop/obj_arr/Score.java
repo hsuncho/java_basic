@@ -13,15 +13,14 @@ public class Score {
      - 캡슐화를 구현해서 작성해 주세요. (생성자는 맘대로 하세요.)
     */
 	
-	String name;
-	int kor;
-	int eng;
-	int math;
-	int total;
-	double avg;
+	private String name;
+	private int kor;
+	private int eng;
+	private int math;
+	private int total;
+	private double avg;
 	
 	Score() {}
-	
 	
 	Score(String name, int kor, int eng, int math){
 		this.name = name;
@@ -29,16 +28,61 @@ public class Score {
 		this.eng = eng;
 		this.math = math;
 		
-		int total = kor + eng + math;
-		this.total = total;
+		this.total = kor + eng + math;
 		
-		double avg = total/3.0;
-		this.avg = avg;
+		this.avg = this.total/3.0;
 	}
 	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getKor() {
+		return kor;
+	}
+
+	public void setKor(int kor) {
+		this.kor = kor;
+	}
+
+	public int getEng() {
+		return eng;
+	}
+
+	public void setEng(int eng) {
+		this.eng = eng;
+	}
+
+	public int getMath() {
+		return math;
+	}
+
+	public void setMath(int math) {
+		this.math = math;
+	}
+
+	public int getTotal() {
+		return total;
+	}
+
+	public void setTotal(int total) {
+		this.total = total;
+	}
+
+	public double getAvg() {
+		return avg;
+	}
+
+	public void setAvg(double avg) {
+		this.avg = avg;
+	}
+
 	public void scoreInfo() {
-		System.out.println("*** 학생 정보 ***");
-		System.out.println("이름: "+this.name);
+		System.out.println("이름: "+name);
 		System.out.println("국어 점수: "+kor+"점");
 		System.out.println("영어 점수: "+eng+"점");
 		System.out.println("수학 점수: "+math+"점");
