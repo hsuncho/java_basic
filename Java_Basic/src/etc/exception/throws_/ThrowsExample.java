@@ -3,7 +3,7 @@ package etc.exception.throws_;
 public class ThrowsExample {
     
     static String[] greetings = {"안녕", "헬로", "니하오"};
-
+    
     /*
      # throws
      
@@ -15,7 +15,6 @@ public class ThrowsExample {
       
      - 또한, 원하는 영역으로 예외를 모아서 한번에 처리하는 것도 가능합니다.
      */
-    
     
     static void greet(int idx) throws Exception {
         System.out.println(greetings[idx]);
@@ -29,6 +28,7 @@ public class ThrowsExample {
             //printStackTrace() 메서드는 예외 발생 원인을 역추적하여
             //예외가 어디에서 발생했는지, 그 이유는 무엇인지를
             //메세지를 통해 개발자에게 전달하므로 자주 사용하는 메서드입니다.
+            System.out.println(e.getMessage());
             e.printStackTrace();
         }
         //에러가 발생은 했으나 프로그램 실행은 정상적으로 종료됨
