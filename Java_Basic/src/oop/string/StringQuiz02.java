@@ -2,7 +2,7 @@ package oop.string;
 
 import java.util.Scanner;
 
-public class StringQuix02 {
+public class StringQuiz02 {
 
 	public static void main(String[] args) {
 
