@@ -1,6 +1,5 @@
 package etc.api.io.rw;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 

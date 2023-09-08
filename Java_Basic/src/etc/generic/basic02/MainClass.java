@@ -6,6 +6,7 @@ public class MainClass {
 
 		Box<Integer, String> b = new Box<>(1,"홍길동");
 		String name = b.get(1);
+		System.out.println(name);
 
 	}
 

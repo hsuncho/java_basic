@@ -2,6 +2,7 @@ package etc.api.io.stream;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class OutputStreamEx {
@@ -27,7 +28,9 @@ public class OutputStreamEx {
 			sc.nextLine(); //파일명 작성 후 엔터 입력값 처리
 			String str = sc.nextLine();
 			 
-			byte[] arr = str.getBytes(); //문자열 데이터를 바이트 제이터로 변환
+			byte[] arr = str.getBytes(); //문자열 데이터를 바이트 데이터로 변환
+//			System.out.println(Arrays.toString(arr));
+//			System.out.println(arr.length);
 			fos.write(arr); //파일을 바이트 단위로 써내림
 			System.out.println("파일이 정상적으로 저장되었습니다.");
 			

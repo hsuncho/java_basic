@@ -18,11 +18,13 @@ public class MainClass {
 		Box<String> box = new Box<>(); //자바 7이후로 생성자 타입은 생략 가능
 		box.setObj("홍길동");
 		String name = box.getObj(); //형 변한이 따로 필요 없다.
+		System.out.println(name);
 		
 		//제네릭에는 기본 데이터 타입을 지정할 수 없습니다.
 		Box<Integer> intBox = new Box<>();
 		intBox.setObj(1);
 		int num = intBox.getObj();
+		System.out.println(num);
 		
 		Box<Person> pBox = new Box<>();
 		pBox.setObj(new Person());

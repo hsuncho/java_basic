@@ -24,9 +24,11 @@ public class BufferedReaderEx {
             //더 이상 읽어들일 데이터가 없다면 null을 리턴.
 			
 			String str;
+			
 			while((str = br.readLine())!=null) {
 				System.out.println(str);
 			}
+			
 			
 		} catch (Exception e) {
 			e.printStackTrace();
