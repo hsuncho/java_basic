@@ -17,9 +17,12 @@ public class Filtering {
 
         // 메뉴 중에 채식주의자가 먹을 수 있는 요리를 필터링
         menuList.stream()
-                .filter(dish -> dish.isVegetarian())
+                .filter(Dish::isVegetarian) // convey interface object to filter as parameter
                 .collect(toList())
-                .forEach(dish -> System.out.println(dish));
+                .forEach(System.out::println);
+        // * method reference
+        // convey interface object to method forEach as parameter
+        // convey data to method println as parameter
 
 //        for (Dish dish : dishInVegetarian) {
 //            System.out.println("dish = " + dish);
@@ -31,7 +34,7 @@ public class Filtering {
         menuList.stream()
                 .filter(d->d.getType() == Dish.Type.MEAT && d.getCalories() < 600)
                 .collect(toList())
-                .forEach(d -> System.out.println(d));
+                .forEach(System.out::println);
 
         System.out.println("\n===== filter dish of which length of name is 4 =====");
         menuList.stream()
